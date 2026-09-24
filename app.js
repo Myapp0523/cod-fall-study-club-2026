@@ -1,0 +1,1 @@
+const pages=[...document.querySelectorAll('.page')];function show(id){pages.forEach(p=>p.classList.toggle('active',p.id===id));window.scrollTo({top:document.querySelector('main').offsetTop-10,behavior:'smooth'});}document.addEventListener('click',e=>{const b=e.target.closest('[data-page]');if(b)show(b.dataset.page);if(e.target.closest('.back'))show('home');});
