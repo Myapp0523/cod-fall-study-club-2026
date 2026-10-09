@@ -24,3 +24,7 @@
 .sponsor-grid .sponsor-card{min-height:125px;padding:16px}
 .sponsor-grid .sponsor-card img{max-height:80px}
 @media(max-width:480px){.sponsor-grid{grid-template-columns:1fr 1fr;gap:10px}.sponsor-grid .sponsor-card{min-height:110px;padding:10px}.sponsor-grid .sponsor-card img{max-height:68px}}
+
+/* Center the final Sponsors card on the Home grid */
+.grid .sponsor-home-card{grid-column:1 / -1;justify-self:center;width:calc((100% - 12px)/2);max-width:220px}
+@media(min-width:700px){.grid .sponsor-home-card{width:calc((100% - 28px)/3)}}
