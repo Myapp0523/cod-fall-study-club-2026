@@ -28,3 +28,7 @@
 /* Center the final Sponsors card on the Home grid */
 .grid .sponsor-home-card{grid-column:1 / -1;justify-self:center;width:calc((100% - 12px)/2);max-width:220px}
 @media(min-width:700px){.grid .sponsor-home-card{width:calc((100% - 28px)/3)}}
+
+/* Balanced full-row Sponsors card */
+.grid .sponsor-home-card{grid-column:1 / -1;width:100%;max-width:none;min-height:100px;justify-self:stretch}
+@media(min-width:700px){.grid .sponsor-home-card{width:100%;max-width:none;min-height:105px}}
